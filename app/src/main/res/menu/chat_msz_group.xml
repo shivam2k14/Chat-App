@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/chat_group_name"
+        android:icon="@mipmap/group_name_auncher"
+        android:title="EDIT Group NAME"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/chat_group_addUser"
+        android:icon="@mipmap/add_userlauncher"
+        android:title="ADD USERS"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/chat_group_removeUser"
+        android:icon="@mipmap/remove_userlauncher"
+        android:title="REMOVE USERS"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shivam84.livechat.UserProfile">
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/layout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/userUpdate_ProfilePic"
+            android:src="@drawable/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/update_user_old_password"
+                android:hint="Enter Your Old Password"
+                android:inputType="textPassword"
+                android:background="@drawable/cust_back"
+                android:drawableLeft="@drawable/password"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/update_user_New_password"
+                android:hint="Enter Your New Password"
+                android:inputType="textPassword"
+                android:background="@drawable/cust_back"
+                android:drawableLeft="@drawable/password"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/update_user_fullName"
+                android:hint="Enter Your Full Name"
+                android:capitalize="words"
+
+                android:background="@drawable/cust_back"
+                android:drawableLeft="@mipmap/fullname_launcher"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/update_user_emailId"
+                android:hint="Enter Your Email Id"
+                android:background="@drawable/cust_back"
+                android:drawableLeft="@mipmap/email_launcher"
+                android:padding="5dp"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/update_user_Phonenum"
+                android:hint="Enter Your Phone Num"
+                android:background="@drawable/cust_back"
+                android:drawableLeft="@mipmap/phone_launcher"
+                android:padding="5dp"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/update_userBtn_update"
+            android:layout_width="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
+            android:text="UPDATE PROFILE"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/update_userBtn_Cancel"
+            android:layout_width="0dp"
+            android:background="#01579B"
+            android:textColor="@color/colorAccent"
+            android:text="Cancel"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

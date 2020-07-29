@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.example.shivam84.livechat"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    //add library
+    //we need BubbleView library for our project
+    compile 'com.github.lguipeng:BubbleView:1.0.1'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.quickblox:quickblox-android-sdk-core:3.3.0'
+    compile 'com.quickblox:quickblox-android-sdk-chat:3.3.0'
+    //add library to help us to create circle drawable easy
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+}
